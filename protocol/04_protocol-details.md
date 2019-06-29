@@ -20,7 +20,7 @@ A node that wishes to send data commits to spend a specific number of incentive 
 
 #### Relay / Gateway Nodes
 
-A node that receives a message from a sender or other relay node will cache and potentially retransmit the message. A relay may use heuristics based on both topological and incentive costs to determine the likelihood a message will ultimately be delivered and use this information to decide whether or not to relay it. A node’s current battery charge and its other cached messages are also considered. A relay may also prioritize messages from senders with a confirmed commitment of value to the payment channel or if it helps to rebalance a channel. A relay node that also has internet access can earn value as a gateway by advertising this via the routing protocol. Nodes either charge a standard price to relay, or advertise their fee in advance as part of their routing metrics.
+A node that receives a message from a sender or other relay node will cache and potentially retransmit the message. A relay may use heuristics based on both topological and incentive costs to determine the likelihood a message will ultimately be delivered and use this information to decide whether or not to relay it. A node’s current battery charge and its other cached messages are also considered. A relay may also prioritize messages from senders with a confirmed commitment of value to the payment channel, or if the messages help to rebalance a channel. A relay node that also has internet access can earn value as a gateway by advertising this via the routing protocol. Nodes either charge a standard price to relay, or advertise their fee in advance as part of their routing metrics.
 
 #### Destination Node
 
