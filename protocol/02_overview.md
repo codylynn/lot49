@@ -30,7 +30,7 @@ Once the data has been received, the destination node transmits back a secret va
 
 ![Figure 3: Node D has confirmed receipt of the data and finalizes at time T4 the previously proposed balance transfer made by node C. Nodes C and B do the same with their respective upstream nodes B and A.](../.gitbook/assets/fig3.png)
 
-Once the destination node confirms receipt of the data by revealing a secret, any node that receives the secret can settle their update transaction on the distributed ledger even if their channel partner disappears or becomes uncooperative. Nodes can observed transactions settled by other relay nodes involved with the same message delivery to learn the secret they need to settle their own channel updates.
+Once the destination node confirms receipt of the data by revealing a secret, any node that receives the secret can settle their update transaction on the distributed ledger even if their channel partner disappears or becomes uncooperative. Nodes can observe transactions settled by other relay nodes involved with the same message delivery to learn the secret they need to settle their own channel updates.
 
 When a payment channel does not already exist between two nodes it must be set up and funded. A transaction that funds a new channel can not be confirmed locally between mesh nodes because it involves a payment that could have been committed to fund a different channel. These transactions must be confirmed directly by the Bitcoin network before they are relied on.
 
