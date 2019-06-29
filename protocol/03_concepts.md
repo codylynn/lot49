@@ -79,7 +79,7 @@ Large values like extended public keys can be looked up in locally-stored caches
 
 ![Figure 11: Node B can reconstitute the full signed transaction from the hints and routing header sent by Node A and from their public key cache. The implied transaction updates the payment channel between Nodes A and B to a new state if Node B has the preimage encrypted for Node D with message m1.](../.gitbook/assets/fig11.png)
 
-### 3.6 Witness
+### 3.5 Witness
 
 When a new payment channel is set up, a funding transaction commits tokens to the channel. Until the funding transaction is validated and settled by the consensus mechanism of the blockchain, there is a risk the funding payment can be double-spent.
 
@@ -89,7 +89,7 @@ Online witness nodes should always return the secret value included with the  tr
 
 Interactions between offline mesh nodes and internet connected witness nodes are handled like a normal communication between nodes, but must include an internet gateway node. Validating a transaction requires making a payment to the relay nodes and gateway node that relays the information across the mesh network to the internet. Like other destination nodes, witness nodes will receive payment for confirming receipt of a valid payload, in this case the payload is a transaction that must also be confirmed by the Bitcoin network. A payment sent to a witness node could also require one of two valid preimages. This would enable the witness node to confirm the message was received and signal to the sender that the  transaction was successfully confirmed or not depending on which preimage they return.
 
-### 3.7 Settlement
+### 3.6 Settlement
 
 We propose using the Bitcoin blockchain as a permissionless distributed ledger to maintain an authoritative global record of incentive payment transactions. A distributed ledger ensures there is no central point of failure that could compromise the operation of the system. The alternative to this approach would be a centralized ledger run by a single or federated group of operators. A centralized ledger would be technically easier to scale by leveraging well-established database technology, but would not be as socially scalable \[[28](references.md#28-szabo-n-2017-money-blockchains-and-social-scalability-url-http-unenumerated-blogspot-com-2017-02-money-blockchains-and-social-scalability-html-accessed-29-sep-2018)\] or as resilient to downtime. Trusted third parties are single points of failure that introduce the same censorship and rent-seeking opportunities available to centralized ISPs and mobile carriers.
 
