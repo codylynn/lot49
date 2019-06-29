@@ -32,15 +32,15 @@ We can assume each device using the protocol sends 50 messages per day, each mes
 
 We need to also factor in that there is a delay between when value is earned and when transactions are settled and the bitcoin becomes re-spendable. This delay depends on how often offline nodes are expected to access the internet. If we assume users have internet connectivity at least every seven days, then each device needs a minimum of 3500 satoshi to incentivize every message they send.
 
-A device that only spends tokens, but never relays for others, will run out of bitcoin after about a week. However, if a node relays more messages then it sends, it will end the week with a net gain in bitcoin. Whether a node gains or loses value depends on the behavior of the user \(eg. a node must be kept powered on to relay\) but also on the location of the device and the topology of the network.
+A device that only spends tokens, but never relays for others, will run out of bitcoin after about a week. However, if a node relays more messages than it sends, it will end the week with a net gain in bitcoin. Whether a node gains or loses value depends on the behavior of the user \(eg. a node must be kept powered on to relay\) but also on the location of the device and the topology of the network.
 
 ### 6.3 Central Nodes
 
-Nodes that are situated in a central location within a well connected mesh network will easily earn value for relaying but tend to not receive more messages to relay then they are capable of relaying. Central nodes are unlikely to have a backlog of messages because they must share the local radio channel with other nearby nodes. They will earn incentives steadily but also spend them regularly in equal proportion for a net even balance.
+Nodes that are situated in a central location within a well connected mesh network will easily earn value for relaying but tend to not receive more messages to relay than they are capable of relaying. Central nodes are unlikely to have a backlog of messages because they must share the local radio channel with other nearby nodes. They will earn incentives steadily but also spend them regularly in equal proportion for a net even balance.
 
 ### 6.4 Bridge Nodes
 
-Nodes located in a sparsely meshed position that bridges two more connected meshed areas are more likely to receive a backlog of messages to relay, and will relay more for others than for themselves. These nodes will be able to prioritize messages with incentive value attached and are more likely to be net earners of incentive value.
+Nodes located in a sparsely meshed position that bridges two or more connected meshed areas are more likely to receive a backlog of messages to relay, and will relay more for others than for themselves. These nodes will be able to prioritize messages with incentive value attached and are more likely to be net earners of incentive value.
 
 ### 6.5 Gateway Nodes
 
