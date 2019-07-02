@@ -26,7 +26,7 @@ Channel updates from newly created payment channels should be considered potenti
 
 For nodes that reciprocally relay messages for each other in roughly equal amounts, it is less critical how long it takes to confirm channel funding transactions on-chain because their channel balances will mostly net out close to zero.
 
-Each node along a route can heuristically decide whether or not to relay a message when the transaction chain includes an unconfirmed transactions that funds a new channel. Priority would be given to messages that are not at risk from an unconfirmed channel funding transaction.
+Each node along a route can heuristically decide whether or not to relay a message when the transaction chain includes an unconfirmed transaction that funds a new channel. Priority would be given to messages that are not at risk from an unconfirmed channel funding transaction.
 
 #### Unsigned for Delivery
 
